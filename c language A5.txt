@@ -1,0 +1,298 @@
+1. Write a program to calculate the sum of two numbers.
+Ans).
+  #include <stdio.h>
+
+int main() 
+ {
+    // Declare variables to store the numbers
+    int num1, num2;
+
+    // Get input from the user
+    printf("Enter the first number: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%d", &num2);
+
+    // Calculate the sum
+    int sum = num1 + num2;
+
+    // Display the result
+    printf("Sum: %d\n", sum);
+
+    // Return 0 to indicate successful completion
+    return 0;
+ }
+
+
+2. Write a program to calculate the area of a circle.
+Ans).
+  #include <stdio.h>
+
+int main() 
+ {
+    // Declare variables
+    double radius, area;
+
+    // Get input from the user
+    printf("Enter the radius of the circle: ");
+    scanf("%lf", &radius);
+
+    // Check if the radius is non-negative
+    if (radius < 0) {
+        printf("Error: Radius cannot be negative.\n");
+    } else {
+        // Calculate the area of the circle
+        area = 3.14159 * radius * radius;
+
+        // Display the result
+        printf("Area of the circle: %.2lf\n", area);
+    }
+
+    // Return 0 to indicate successful completion
+    return 0;
+  }
+
+3. Write a program to calculate the volume of a Cuboid.
+ Ans).
+#include <stdio.h>
+
+int main() 
+ {
+    // Declare variables
+    double length, width, height, volume;
+
+    // Get input from the user
+    printf("Enter the length of the cuboid: ");
+    scanf("%lf", &length);
+
+    printf("Enter the width of the cuboid: ");
+    scanf("%lf", &width);
+
+    printf("Enter the height of the cuboid: ");
+    scanf("%lf", &height);
+
+    // Check if the dimensions are non-negative
+    if (length < 0 || width < 0 || height < 0) {
+        printf("Error: Dimensions cannot be negative.\n");
+    } else {
+        // Calculate the volume of the cuboid
+        volume = length * width * height;
+
+        // Display the result
+        printf("Volume of the cuboid: %.2lf\n", volume);
+    }
+
+    // Return 0 to indicate successful completion
+    return 0;
+}
+
+			
+4. Write a program to calculate the simple interest
+Ans).
+#include <stdio.h>
+
+int main()
+ {
+    // Declare variables
+    double principal, rate, time, simpleInterest;
+
+    // Get input from the user
+    printf("Enter the principal amount: ");
+    scanf("%lf", &principal);
+
+    printf("Enter the interest rate (in percentage): ");
+    scanf("%lf", &rate);
+
+    printf("Enter the time (in years): ");
+    scanf("%lf", &time);
+
+    // Check if the principal and time are non-negative
+    if (principal < 0 || time < 0) {
+        printf("Error: Principal and time cannot be negative.\n");
+    } else {
+        // Calculate the simple interest
+        simpleInterest = (principal * rate * time) / 100.0;
+
+        // Display the result
+        printf("Simple Interest: %.2lf\n", simpleInterest);
+    }
+
+    // Return 0 to indicate successful completion
+    return 0;
+ }
+
+
+5. Write a program to calculate the area of a rectangle
+Ans).
+#include <stdio.h>
+
+int main() 
+ {
+    // Declare variables
+    double length, width, area;
+
+    // Get input from the user
+    printf("Enter the length of the rectangle: ");
+    scanf("%lf", &length);
+
+    printf("Enter the width of the rectangle: ");
+    scanf("%lf", &width);
+
+    // Check if the dimensions are non-negative
+    if (length < 0 || width < 0) {
+        printf("Error: Dimensions cannot be negative.\n");
+    } else {
+        // Calculate the area of the rectangle
+        area = length * width;
+
+        // Display the result
+        printf("Area of the rectangle: %.2lf\n", area);
+    }
+
+    // Return 0 to indicate successful completion
+    return 0;
+}
+
+
+6. Write a program to calculate the average of three numbers
+Ans.
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    double num1, num2, num3, average;
+
+    // Get input from the user
+    printf("Enter the first number: ");
+    scanf("%lf", &num1);
+
+    printf("Enter the second number: ");
+    scanf("%lf", &num2);
+
+    printf("Enter the third number: ");
+    scanf("%lf", &num3);
+
+    // Calculate the average
+    average = (num1 + num2 + num3) / 3.0;
+
+    // Display the result
+    printf("Average: %.2lf\n", average);
+
+    // Return 0 to indicate successful completion
+    return 0;
+}
+
+
+7. Write a program to calculate the square of a given number.
+Ans). 
+  #include <stdio.h>
+
+int main() 
+ {
+    // Declare variables
+    double number, square;
+
+    // Get input from the user
+    printf("Enter a number: ");
+    scanf("%lf", &number);
+
+    // Calculate the square
+    square = number * number;
+
+    // Display the result
+    printf("Square of %.2lf: %.2lf\n", number, square);
+
+    // Return 0 to indicate successful completion
+    return 0;
+ }
+
+8. Write a program which takes a character as input and print its ASCII code.
+  Ans).
+#include <stdio.h>
+
+int main() 
+ {
+    // Declare variables
+    char character;
+
+    // Get input from the user
+    printf("Enter a character: ");
+    scanf(" %c", &character);
+
+    // Print ASCII code
+    printf("ASCII code of '%c': %d\n", character, character);
+
+    // Return 0 to indicate successful completion
+    return 0;
+ }
+
+
+9. Write a program to calculate the profit percentage upon selling a product. Cost price
+and selling price are given by the user.
+Ans).
+#include <stdio.h>
+
+int main()
+ {
+    // Declare variables
+    double costPrice, sellingPrice, profit, profitPercentage;
+
+    // Get input from the user
+    printf("Enter the cost price: ");
+    scanf("%lf", &costPrice);
+
+    printf("Enter the selling price: ");
+    scanf("%lf", &sellingPrice);
+
+    // Check if cost price is less than selling price
+    if (costPrice > sellingPrice) {
+        printf("Error: Selling price should be greater than cost price.\n");
+    } else {
+        // Calculate profit
+        profit = sellingPrice - costPrice;
+
+        // Calculate profit percentage
+        profitPercentage = (profit / costPrice) * 100.0;
+
+        // Display the result
+        printf("Profit: %.2lf\n", profit);
+        printf("Profit Percentage: %.2lf%%\n", profitPercentage);
+    }
+
+    // Return 0 to indicate successful completion
+    return 0;
+ }
+
+
+10. Write a program to calculate the area of a triangle where base and height of the
+triangle are given.
+Ans).
+#include <stdio.h>
+
+int main()
+ {
+    // Declare variables
+    double base, height, area;
+
+    // Get input from the user
+    printf("Enter the base of the triangle: ");
+    scanf("%lf", &base);
+
+    printf("Enter the height of the triangle: ");
+    scanf("%lf", &height);
+
+    // Check if base and height are non-negative
+    if (base < 0 || height < 0) {
+        printf("Error: Base and height cannot be negative.\n");
+    } else {
+        // Calculate the area of the triangle
+        area = 0.5 * base * height;
+
+        // Display the result
+        printf("Area of the triangle: %.2lf\n", area);
+    }
+
+    // Return 0 to indicate successful completion
+    return 0;
+ }
